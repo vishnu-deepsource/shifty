@@ -47,7 +47,7 @@ export default class Shifty {
       this.mode = "Failover";
       // skipcq: JS-0002
       console.warn(
-        "SHIFTY: Using failover method for generating secret, this uses Math.random() and is not cryptographically safe"
+        "SHIFTY: Using failover method for generating secret, this uses Math.random() and is not cryptographically safe",
       );
     }
   }

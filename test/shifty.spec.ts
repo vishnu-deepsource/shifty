@@ -71,7 +71,7 @@ describe("Generate Method on Fallback", () => {
         shft
           .generate(100)
           .split("")
-          .some((char) => specials.includes(char))
+          .some((char) => specials.includes(char)),
       );
     }
   });
@@ -85,7 +85,7 @@ describe("Generate Method on Fallback", () => {
         shft
           .generate(100)
           .split("")
-          .every((char) => !specials.includes(char))
+          .every((char) => !specials.includes(char)),
       );
     }
   });
@@ -133,7 +133,7 @@ describe("Generate Method with Web Crypto", () => {
         shft
           .generate(100)
           .split("")
-          .some((char) => specials.includes(char))
+          .some((char) => specials.includes(char)),
       );
     }
   });
@@ -147,7 +147,7 @@ describe("Generate Method with Web Crypto", () => {
         shft
           .generate(100)
           .split("")
-          .every((char) => !specials.includes(char))
+          .every((char) => !specials.includes(char)),
       );
     }
   });
